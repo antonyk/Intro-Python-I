@@ -24,7 +24,7 @@ print(a[-3:])
 import math
 def midOrZero(n):
     isEven = ((n % 2) == 0)
-    start = math.floor(n/2)
+    start = n // 2
     if start > 0:
         start = start-1
     end = start + 1
