@@ -6,7 +6,11 @@ def is_even(n):
 
 # Read a number from the keyboard
 num = input("Enter a number: ")
-num = int(num)
+try:
+    num = int(num)
+except:
+    print("Requires a number")
+    exit(1)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 

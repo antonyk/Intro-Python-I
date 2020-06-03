@@ -16,10 +16,10 @@ print(f1(1, 2))
 
 # YOUR CODE HERE
 def f2(*args):
-    num = 0
+    total = 0
     for i in args:
-        num = num + i
-    return num
+        total = total + i
+    return total
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -57,8 +57,8 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 def f4(**kwargs):
-    for i in list(kwargs):
-        print(f'key: {i}, value: {kwargs[i]}')
+    for k,v in kwargs.items():
+        print(f'key: {k}, value: {v}')
 
 # Should print
 # key: a, value: 12
