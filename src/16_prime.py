@@ -12,6 +12,14 @@ def is_prime(num):
 
     return True
 
+# num = int(input(f"Enter a number to test: "))
+# print(is_prime(num))
 
-num = int(input(f"Enter a number to test: "))
-print(is_prime(num))
+
+prim = []
+num = int(input(f"Enter max number to test: "))
+for i in range(num):
+    if is_prime(i):
+        prim.append(i)
+
+print(prim)
