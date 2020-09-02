@@ -15,7 +15,13 @@ y = "7"
 
 # YOUR CODE HERE
 
-print(int(x) + int(y))
+items = []
+items.append(x)
+items.append(y)
+
+total = sum(int(num) for num in items)
+print(total)
+# print(int(x) + int(y))
 
 # Write a print statement that combines x + y into the string value 57
 

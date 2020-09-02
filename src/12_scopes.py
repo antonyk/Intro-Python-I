@@ -5,10 +5,10 @@
 x = 12
 
 def change_x():
+    global x
     x = 99
-    return x
 
-x = change_x()
+change_x()
 
 # This prints 12. What do we have to modify in change_x() to get it to print 99?
 print(x)
@@ -20,10 +20,10 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y
         y = 999
-        return y
 
-    y = inner()
+    inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999?
